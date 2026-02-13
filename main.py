@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-TOKEN = "8402217438:AAG9pnOaSB3uUfnsLddZWmxQ3QmKR45DJl8"
+TOKEN = API_TOKEN
 bot = telebot.TeleBot(TOKEN)
 
 user_data = {}
@@ -256,4 +256,5 @@ def admin_order_handler(call):
 
 if __name__ == "__main__":
     print("Бот запущен...")
+
     bot.polling(non_stop=True)
